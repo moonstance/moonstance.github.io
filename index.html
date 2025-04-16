@@ -5,19 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moonstance</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; }
-    h1 { font-size: 2rem; }
-    .product { margin-top: 1rem; }
+    :root {
+      --blue-light: #d6f0ff;
+      --blue-mid: #a1d4f3;
+      --blue-dark: #5ba6d0;
+      --text-dark: #202c3b;
+      --text-light: #ffffff;
+      --section-padding: 4rem;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--blue-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('hero.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .section {
+      padding: var(--section-padding) 2rem;
+    }
+
+    .product {
+      background-color: var(--blue-mid);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .product h2 {
+      margin-top: 0;
+      color: var(--text-dark);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    .product p {
+      font-size: 1.1rem;
+    }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--blue-dark);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #3e7fa3;
+    }
+
+    footer {
+      background-color: var(--blue-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #cfefff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Moonstance</h1>
-  <p>Your home for beautiful, developer-focused tools.</p>
+  <header>
+    <h1>Welcome to Moonstance</h1>
+  </header>
 
-  <div class="product">
-    <h2>DbStudio</h2>
-    <p>A lightweight C# studio for working directly with RavenDB.</p>
-    <a href="https://github.com/moonstance/db-studio/releases">Download →</a>
-  </div>
+  <section class="section">
+    <div class="product">
+      <h2>DbStudio</h2>
+      <p>
+        DbStudio is a lightweight, developer-friendly C# scripting environment for interacting with RavenDB. Write and run powerful LINQ queries or modify data directly against your RavenDB using live C# code, powered by Roslyn. It's fast, intuitive, and perfect for developers who want the freedom of scripting with the comfort of .NET.
+      </p>
+      <img src="dbstudio-screenshot.png" alt="DbStudio Screenshot" />
+      <a href="https://github.com/moonstance/db-studio/releases" class="download-button">Download DbStudio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Moonstance. Crafted for developers, by developers.</p>
+    <p><a href="https://github.com/moonstance">GitHub</a></p>
+  </footer>
 </body>
 </html>
