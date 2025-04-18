@@ -84,12 +84,24 @@ footer {
   background-color: var(--blue-dark);
   color: var(--text-light);
   text-align: center;
-  padding: 0rem;
-  margin-top: 4rem;
-  position: fixed; /* Make the footer fixed */
-  bottom: 0; /* Align it to the bottom */
-  left: 0;
-  width: 100%; /* Ensure it spans the full width */
+  padding: 0.5rem;
+  margin-top: 2rem;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Push items to the edges */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+footer p:first-child {
+  margin: 0; /* Ensure no extra margin for the first paragraph */
+  text-align: center; /* Center the text */
+  flex: 1; /* Allow it to take up available space for proper centering */
+}
+
+footer p:last-child {
+  margin: 0; /* Ensure no extra margin for the second paragraph */
+  text-align: right; /* Align text to the right */
+  font-size: 0.8rem;;
 }
 
 footer a {
