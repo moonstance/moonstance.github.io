@@ -84,7 +84,7 @@ footer {
   background-color: var(--blue-dark);
   color: var(--text-light);
   text-align: center;
-  padding: 2rem;
+  padding: 0rem;
   margin-top: 4rem;
   position: fixed; /* Make the footer fixed */
   bottom: 0; /* Align it to the bottom */

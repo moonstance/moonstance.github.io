@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Meta -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Title (keep under ~60 chars so it doesn’t truncate in SERPs) -->
-    <title>Moonstance | RavenDB Developer Tools & C# Scripting</title>
-  
-    <!-- Primary Description (kept under ~155 chars) -->
-    <meta name="description"
-          content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
-  
-    <!-- Keywords (optional; mostly ignored by Google, but harmless) -->
-    <meta name="keywords"
-          content="Moonstance, RavenDB tools, DbStudio, C# scripting, Roslyn, LINQ, .NET developer tools" />
-  
-    <!-- Author / Publisher -->
-    <meta name="author" content="Moonstance Team" />
-  
-    <!-- Robots (make sure you’re allowing index + follow) -->
-    <meta name="robots" content="index, follow" />
-  
-    <!-- Favicon & Touch Icon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-  
-    <!-- Open Graph (for rich link previews on Facebook, Slack, etc.) -->
-    <meta property="og:type"        content="website" />
-    <meta property="og:title"       content="Moonstance | RavenDB Developer Tools & C# Scripting" />
-    <meta property="og:description" content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
-    <meta property="og:url"         content="https://moonstance.space/" />
-    <meta property="og:image"       content="https://moonstance.space/og-image.png" />
-  
-    <!-- Twitter Card -->
-    <meta name="twitter:card"        content="summary_large_image" />
-    <meta name="twitter:site"        content="@moonstance" />
-    <meta name="twitter:title"       content="Moonstance | RavenDB Developer Tools & C# Scripting" />
-    <meta name="twitter:description" content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
-    <meta name="twitter:image"       content="https://moonstance.space/twitter-image.png" />
-  
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://moonstance.space/" />
-  
-    <!-- Alternate language versions (if any) -->
-    <!-- <link rel="alternate" hreflang="en" href="https://moonstance.space/" /> -->
-  
-    <!-- Preconnect / Prefetch (for performance) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title (keep under ~60 chars so it doesn’t truncate in SERPs) -->
+  <title>Moonstance | RavenDB Developer Tools & C# Scripting</title>
+
+  <!-- Primary Description (kept under ~155 chars) -->
+  <meta name="description"
+    content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
+
+  <!-- Keywords (optional; mostly ignored by Google, but harmless) -->
+  <meta name="keywords"
+    content="Moonstance, RavenDB tools, DbStudio, C# scripting, Roslyn, LINQ, .NET developer tools" />
+
+  <!-- Author / Publisher -->
+  <meta name="author" content="Moonstance Team" />
+
+  <!-- Robots (make sure you’re allowing index + follow) -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
+  <!-- Open Graph (for rich link previews on Facebook, Slack, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Moonstance | RavenDB Developer Tools & C# Scripting" />
+  <meta property="og:description"
+    content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
+  <meta property="og:url" content="https://moonstance.space/" />
+  <meta property="og:image" content="https://moonstance.space/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@moonstance" />
+  <meta name="twitter:title" content="Moonstance | RavenDB Developer Tools & C# Scripting" />
+  <meta name="twitter:description"
+    content="Moonstance: powerful developer tools for RavenDB—featuring DbStudio, a lightweight C# scripting environment powered by Roslyn and LINQ." />
+  <meta name="twitter:image" content="https://moonstance.space/twitter-image.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://moonstance.space/" />
+
+  <!-- Alternate language versions (if any) -->
+  <!-- <link rel="alternate" hreflang="en" href="https://moonstance.space/" /> -->
+
+  <!-- Preconnect / Prefetch (for performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
 <body>
   <header>
     <h1>Welcome to Moonstance</h1>
@@ -65,18 +68,20 @@
       <h2>DbStudio</h2>
       <p>
         DbStudio is a lightweight, developer-friendly C# scripting environment for interacting with RavenDB.
-        Write and run powerful LINQ queries or modify data directly against your RavenDB using live C# code, powered by Roslyn and using the outstanding <a href="https://roslynpad.net/">Roslynpad</a>.
+        Write and run powerful LINQ queries or modify data directly against your RavenDB using live C# code, powered by
+        Roslyn and using the outstanding <a href="https://roslynpad.net/">Roslynpad</a>.
         It's fast, intuitive, and perfect for developers who want the freedom of scripting with the comfort of .NET.
       </p>
       <a href="https://github.com/moonstance/db-studio/releases" class="download-button">Download DbStudio</a>
       <img src="dbstudio-screenshot.png" alt="DbStudio Screenshot" />
-      
+
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Moonstance. Crafted for developers, by developers.</p>
+    <p>&copy; 2025 Moonstance <br /> Crafted for developers, by developers</p>
     <p><a href="https://github.com/moonstance">GitHub</a></p>
   </footer>
 </body>
+
 </html>
